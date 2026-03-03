@@ -5,7 +5,7 @@ Internal tools, data pipelines, and AI-powered applications built by the S2G tea
 **Cloud Run URL pattern:** `https://{service-name}-vudrpjptuq-uc.a.run.app`  
 **Posit Connect:** `https://connect.s2gdata.com`  
 **GCP Project:** `s2g-data-platform`  
-**Last updated:** 2026-03-03 22:16 UTC
+**Last updated:** 2026-03-03 22:19 UTC
 
 ---
 
@@ -109,3 +109,5 @@ This README is auto-generated daily at midnight PT by a GitHub Actions workflow.
 - **`.github/workflows/update-readme.yml`** — runs at midnight PT every day, or on-demand via `gh workflow run update-readme.yml --repo S2G-Investments/.github`.
 
 The workflow only commits if data actually changed, so there are no noisy empty commits on quiet days.
+
+> **TODO:** The "Last Commit" and "Last Committer" columns currently show `—` because the default `GITHUB_TOKEN` only has access to this repo. To enable them, create a PAT with `repo` scope, add it as a secret named `ORG_PAT` in this repo's settings, and update the workflow to use `GITHUB_TOKEN: ${{ secrets.ORG_PAT }}`.
