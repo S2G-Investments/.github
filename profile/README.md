@@ -5,7 +5,7 @@ Internal tools, data pipelines, and AI-powered applications built by the S2G tea
 **Cloud Run URL pattern:** `https://{service-name}-vudrpjptuq-uc.a.run.app`  
 **Posit Connect:** `https://connect.s2gdata.com`  
 **GCP Project:** `s2g-data-platform`  
-**Last updated:** 2026-03-03 22:10 UTC
+**Last updated:** 2026-03-03 22:16 UTC
 
 ---
 
@@ -100,4 +100,12 @@ Deployed to [connect.s2gdata.com](https://connect.s2gdata.com).
 
 ---
 
-*To add or update a service, edit `services.json` in this repo. The README is auto-generated daily.*
+## How This Works
+
+This README is auto-generated daily at midnight PT by a GitHub Actions workflow.
+
+- **`services.json`** — the editable source of truth. When you add a new app, add an entry here.
+- **`scripts/update_readme.py`** — queries the GitHub API for each repo's last commit date + author, then regenerates this file.
+- **`.github/workflows/update-readme.yml`** — runs at midnight PT every day, or on-demand via `gh workflow run update-readme.yml --repo S2G-Investments/.github`.
+
+The workflow only commits if data actually changed, so there are no noisy empty commits on quiet days.
