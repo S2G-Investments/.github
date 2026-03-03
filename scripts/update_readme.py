@@ -196,6 +196,8 @@ def build_readme(services: dict, commit_cache: dict) -> str:
         "- **`.github/workflows/update-readme.yml`** — runs at midnight PT every day, or on-demand via `gh workflow run update-readme.yml --repo S2G-Investments/.github`.",
         "",
         "The workflow only commits if data actually changed, so there are no noisy empty commits on quiet days.",
+        "",
+        "> **TODO:** The \"Last Commit\" and \"Last Committer\" columns currently show `—` because the default `GITHUB_TOKEN` only has access to this repo. To enable them, create a PAT with `repo` scope, add it as a secret named `ORG_PAT` in this repo's settings, and update the workflow to use `GITHUB_TOKEN: ${{ secrets.ORG_PAT }}`.",
     ]
 
     return "\n".join(lines) + "\n"
