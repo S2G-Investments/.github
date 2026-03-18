@@ -104,6 +104,20 @@
       "repo": "s2g-ai-training",
       "description": "10-lesson AI training curriculum for the S2G team",
       "owner": "Chuck"
+    },
+    {
+      "name": "Summit Tables",
+      "url": "https://summit-tables-vudrpjptuq-uc.a.run.app",
+      "repo": "Summit_Tables",
+      "description": "Intelligent seating management tool for S2G Annual Summit events",
+      "owner": "Chuck"
+    },
+    {
+      "name": "Feedback Window",
+      "url": "https://feedback-window-vudrpjptuq-uc.a.run.app",
+      "repo": "feedback-window",
+      "description": "Embeddable feedback widget and admin dashboard for collecting user feedback from S2G apps",
+      "owner": "Sean Nguyen"
     }
   ],
   "pipelines": [
@@ -141,6 +155,16 @@
       "repo": "slack-time-allocation-bot",
       "description": "Slack DM bot for personal time logging with BigQuery storage",
       "owner": "Sean Nguyen"
+    },
+    {
+      "repo": "s2g-notes-ingest",
+      "description": "Ingests and processes S2G meeting notes, syncing data to BigQuery",
+      "owner": "Sean Nguyen"
+    },
+    {
+      "repo": "salesforce-login-sync",
+      "description": "Daily Cloud Function syncing Salesforce user login activity to BigQuery",
+      "owner": "Sean Nguyen"
     }
   ],
   "posit_connect": [
@@ -167,6 +191,16 @@
     {
       "repo": "summit",
       "description": "S2G Summit dashboards — year-in-review analytics",
+      "owner": "Sean Nguyen"
+    },
+    {
+      "repo": "fv-staffing-tool",
+      "description": "Streamlit app for tracking and managing FV staffing assignments",
+      "owner": "Chuck"
+    },
+    {
+      "repo": "meeting-capture-scorecard",
+      "description": "Scores meeting capture coverage against Google Calendar, deployed to Posit Connect",
       "owner": "Sean Nguyen"
     }
   ],
