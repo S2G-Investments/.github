@@ -5,7 +5,7 @@ Internal tools, data pipelines, and AI-powered applications built by the S2G tea
 **Cloud Run URL pattern:** `https://{service-name}-vudrpjptuq-uc.a.run.app`  
 **Posit Connect:** `https://connect.s2gdata.com`  
 **GCP Project:** `s2g-data-platform`  
-**Last updated:** 2026-03-18 15:49 UTC
+**Last updated:** 2026-03-19 08:08 UTC
 
 ---
 
@@ -30,6 +30,8 @@ User-facing applications deployed on Google Cloud Run. All restricted to `@s2gin
 | [SEC MR Dashboard](https://sec-mr-dashboard-vudrpjptuq-uc.a.run.app) | [sec-marketing-review](https://github.com/S2G-Investments/sec-marketing-review) | SEC marketing review compliance dashboard | Chuck | 2026-03-17 | Chuck |
 | [Software Request](https://software-request-app-vudrpjptuq-uc.a.run.app) | [software-request-app](https://github.com/S2G-Investments/software-request-app) | Employee software request portal | Chuck | 2026-03-14 | Chuck |
 | [AI Training](https://s2g-ai-training-vudrpjptuq-uc.a.run.app) | [s2g-ai-training](https://github.com/S2G-Investments/s2g-ai-training) | 10-lesson AI training curriculum for the S2G team | Chuck | 2026-03-11 | Chuck |
+| [Summit Tables](https://summit-tables-vudrpjptuq-uc.a.run.app) | [Summit_Tables](https://github.com/S2G-Investments/Summit_Tables) | Intelligent seating management tool for S2G Annual Summit events | Chuck | 2026-03-18 | Sean Nguyen |
+| [Feedback Window](https://feedback-window-vudrpjptuq-uc.a.run.app) | [feedback-window](https://github.com/S2G-Investments/feedback-window) | Embeddable feedback widget and admin dashboard for collecting user feedback from S2G apps | Sean Nguyen | 2026-03-12 | Chuck |
 
 ---
 
@@ -39,13 +41,15 @@ Background services, scheduled jobs, and Salesforce integrations.
 
 | Repo | Description | Owner | Last Commit | Last Committer |
 |------|-------------|-------|-------------|----------------|
-| [origination-gmail-ingest](https://github.com/S2G-Investments/origination-gmail-ingest) | Serverless pipeline: processes origination@ inbox deals via Claude AI → Salesforce | Sean Nguyen | 2026-03-05 | Sean Nguyen |
+| [origination-gmail-ingest](https://github.com/S2G-Investments/origination-gmail-ingest) | Serverless pipeline: processes origination@ inbox deals via Claude AI → Salesforce | Sean Nguyen | 2026-03-18 | Sean Nguyen |
 | [pass-email-ingest](https://github.com/S2G-Investments/pass-email-ingest) | Serverless pipeline: processes pass@ inbox deals via Claude AI → Salesforce | Sean Nguyen | 2025-12-18 | Sean Nguyen |
 | [board-deck-gmail-ingest](https://github.com/S2G-Investments/board-deck-gmail-ingest) | Board materials email processor with AI extraction and Box storage | Sean Nguyen | 2025-09-29 | Sean Nguyen |
 | [calendar-to-salesforce](https://github.com/S2G-Investments/calendar-to-salesforce) | Google Calendar → Salesforce Event sync for IR team | Sean Nguyen | 2026-01-07 | Sean Nguyen |
 | [s2g-zoom-meeting-sync](https://github.com/S2G-Investments/s2g-zoom-meeting-sync) | Zoom transcript pipeline: webhooks → VTT parsing → Box upload → AI processing | Sean Nguyen | 2026-03-13 | Sean Nguyen |
 | [fivetran-dbt](https://github.com/S2G-Investments/fivetran-dbt) | dbt project transforming Fivetran source data into analytics tables | Sean Nguyen | 2026-03-02 | Sean Nguyen |
 | [slack-time-allocation-bot](https://github.com/S2G-Investments/slack-time-allocation-bot) | Slack DM bot for personal time logging with BigQuery storage | Sean Nguyen | 2026-02-05 | Sean Nguyen |
+| [s2g-notes-ingest](https://github.com/S2G-Investments/s2g-notes-ingest) | Ingests and processes S2G meeting notes, syncing data to BigQuery | Sean Nguyen | 2026-03-19 | Sean Nguyen |
+| [salesforce-login-sync](https://github.com/S2G-Investments/salesforce-login-sync) | Daily Cloud Function syncing Salesforce user login activity to BigQuery | Sean Nguyen | 2026-03-13 | Chuck |
 
 ---
 
@@ -60,6 +64,8 @@ Deployed to [connect.s2gdata.com](https://connect.s2gdata.com).
 | [software-approval-portal](https://github.com/S2G-Investments/software-approval-portal) | Software approval portal for Technology, Legal, and Compliance review | Christopher Marshall | 2026-01-30 | Christopher Marshall |
 | [contract-agent](https://github.com/S2G-Investments/contract-agent) | AI-powered legal contract intake application | Sean Nguyen | 2026-01-27 | Sean Nguyen |
 | [summit](https://github.com/S2G-Investments/summit) | S2G Summit dashboards — year-in-review analytics | Sean Nguyen | 2026-03-17 | Sean Nguyen |
+| [fv-staffing-tool](https://github.com/S2G-Investments/fv-staffing-tool) | Streamlit app for tracking and managing FV staffing assignments | Chuck | 2026-03-17 | Francis Villante |
+| [meeting-capture-scorecard](https://github.com/S2G-Investments/meeting-capture-scorecard) | Scores meeting capture coverage against Google Calendar, deployed to Posit Connect | Sean Nguyen | 2026-03-13 | Sean Nguyen |
 
 ---
 
@@ -67,7 +73,7 @@ Deployed to [connect.s2gdata.com](https://connect.s2gdata.com).
 
 | Repo | Description | Owner | Last Commit | Last Committer |
 |------|-------------|-------|-------------|----------------|
-| [ir-meeting-brief](https://github.com/S2G-Investments/ir-meeting-brief) | AI briefing generator for IR meetings using Calendar, Salesforce, and Gemini | Sean Nguyen | 2026-03-03 | Sean Nguyen |
+| [ir-meeting-brief](https://github.com/S2G-Investments/ir-meeting-brief) | AI briefing generator for IR meetings using Calendar, Salesforce, and Gemini | Sean Nguyen | 2026-03-19 | Sean Nguyen |
 | [chatgpt-license-audit](https://github.com/S2G-Investments/chatgpt-license-audit) | ChatGPT Team license audit — scores users and recommends keep vs. cycle off | Sean Nguyen | 2026-02-11 | Sean Nguyen |
 | [claude-intake-app](https://github.com/S2G-Investments/claude-intake-app) | Claude access application portal for S2G employees | Christopher Marshall | 2026-02-20 | Christopher Marshall |
 | [s2g-excalidraw-render](https://github.com/S2G-Investments/s2g-excalidraw-render) | Cloud Run service for rendering Excalidraw diagrams to PNG/SVG | Sean Nguyen | 2026-02-14 | Sean Nguyen |
