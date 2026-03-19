@@ -6,6 +6,7 @@ Fetches last commit date and author for each repo.
 
 import json
 import os
+import re
 import sys
 import urllib.request
 import urllib.error
@@ -30,6 +31,62 @@ def github_get(path: str) -> dict | None:
     except urllib.error.HTTPError as e:
         print(f"  WARNING: GitHub API {path} → {e.code}", file=sys.stderr)
         return None
+
+
+def github_get_with_headers(path: str) -> tuple[dict | list | None, dict]:
+    """Like github_get but also returns response headers (needed for Link pagination)."""
+    url = f"https://api.github.com{path}"
+    req = urllib.request.Request(url, headers={
+        "Authorization": f"Bearer {TOKEN}",
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+    })
+    try:
+        with urllib.request.urlopen(req) as resp:
+            body = json.loads(resp.read())
+            link = resp.headers.get("Link", "")
+            return body, {"Link": link}
+    except urllib.error.HTTPError as e:
+        print(f"  WARNING: GitHub API {path} → {e.code}", file=sys.stderr)
+        return None, {}
+
+
+def parse_last_page(link_header: str) -> int | None:
+    """Extract page number from rel="last" in a GitHub Link header."""
+    match = re.search(r'[?&]page=(\d+)>;\s*rel="last"', link_header)
+    if match:
+        return int(match.group(1))
+    return None
+
+
+def get_first_commit_author(repo: str) -> str:
+    """Returns normalized author name of the repo's first (oldest) commit."""
+    data, headers = github_get_with_headers(
+        f"/repos/{ORG}/{repo}/commits?per_page=1"
+    )
+    if not data or not isinstance(data, list) or len(data) == 0:
+        return "—"
+
+    link = headers.get("Link", "")
+    last_page = parse_last_page(link)
+
+    if last_page is None:
+        # Single commit repo — this is the first commit
+        commit = data[0]
+    else:
+        first_data = github_get(
+            f"/repos/{ORG}/{repo}/commits?per_page=1&page={last_page}"
+        )
+        if not first_data or not isinstance(first_data, list) or len(first_data) == 0:
+            return "—"
+        commit = first_data[0]
+
+    author_name = (
+        commit.get("commit", {}).get("author", {}).get("name")
+        or commit.get("author", {}).get("login")
+        or "—"
+    )
+    return normalize_author(author_name)
 
 
 def get_last_commit(repo: str) -> tuple[str, str]:
@@ -57,6 +114,7 @@ def normalize_author(name: str) -> str:
         "sean-S2G": "Sean Nguyen",
         "Chris-S2Gmaker": "Christopher Marshall",
         "Kevin": "Kevin Lo",
+        "mitchS2GDEV": "Mitch",
     }
     return mapping.get(name, name)
 
@@ -65,7 +123,7 @@ def repo_link(repo: str) -> str:
     return f"[{repo}](https://github.com/{ORG}/{repo})"
 
 
-def build_readme(services: dict, commit_cache: dict) -> str:
+def build_readme(services: dict, commit_cache: dict, owner_cache: dict) -> str:
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
     lines = [
@@ -94,11 +152,13 @@ def build_readme(services: dict, commit_cache: dict) -> str:
             date, author = commit_cache.get(repo, ("—", "—"))
             author = normalize_author(author)
             repo_col = repo_link(repo)
+            owner = owner_cache.get(repo, "—")
         else:
             date, author = "—", "—"
             repo_col = "—"
+            owner = "—"
         name_col = f"[{app['name']}]({app['url']})"
-        lines.append(f"| {name_col} | {repo_col} | {app['description']} | {app['owner']} | {date} | {author} |")
+        lines.append(f"| {name_col} | {repo_col} | {app['description']} | {owner} | {date} | {author} |")
 
     lines += [
         "",
@@ -116,7 +176,8 @@ def build_readme(services: dict, commit_cache: dict) -> str:
         repo = svc["repo"]
         date, author = commit_cache.get(repo, ("—", "—"))
         author = normalize_author(author)
-        lines.append(f"| {repo_link(repo)} | {svc['description']} | {svc['owner']} | {date} | {author} |")
+        owner = owner_cache.get(repo, "—")
+        lines.append(f"| {repo_link(repo)} | {svc['description']} | {owner} | {date} | {author} |")
 
     lines += [
         "",
@@ -134,7 +195,8 @@ def build_readme(services: dict, commit_cache: dict) -> str:
         repo = svc["repo"]
         date, author = commit_cache.get(repo, ("—", "—"))
         author = normalize_author(author)
-        lines.append(f"| {repo_link(repo)} | {svc['description']} | {svc['owner']} | {date} | {author} |")
+        owner = owner_cache.get(repo, "—")
+        lines.append(f"| {repo_link(repo)} | {svc['description']} | {owner} | {date} | {author} |")
 
     lines += [
         "",
@@ -150,7 +212,8 @@ def build_readme(services: dict, commit_cache: dict) -> str:
         repo = svc["repo"]
         date, author = commit_cache.get(repo, ("—", "—"))
         author = normalize_author(author)
-        lines.append(f"| {repo_link(repo)} | {svc['description']} | {svc['owner']} | {date} | {author} |")
+        owner = owner_cache.get(repo, "—")
+        lines.append(f"| {repo_link(repo)} | {svc['description']} | {owner} | {date} | {author} |")
 
     lines += [
         "",
@@ -166,7 +229,8 @@ def build_readme(services: dict, commit_cache: dict) -> str:
         repo = svc["repo"]
         date, author = commit_cache.get(repo, ("—", "—"))
         author = normalize_author(author)
-        lines.append(f"| {repo_link(repo)} | {svc['description']} | {svc['owner']} | {date} | {author} |")
+        owner = owner_cache.get(repo, "—")
+        lines.append(f"| {repo_link(repo)} | {svc['description']} | {owner} | {date} | {author} |")
 
     lines += [
         "",
@@ -219,13 +283,16 @@ def main():
 
     print(f"Fetching commit data for {len(all_repos)} repos...")
     commit_cache = {}
+    owner_cache = {}
     for repo in sorted(all_repos):
         print(f"  {repo}...", end=" ", flush=True)
         date, author = get_last_commit(repo)
         commit_cache[repo] = (date, author)
-        print(f"{date} by {author}")
+        owner = get_first_commit_author(repo)
+        owner_cache[repo] = owner
+        print(f"{date} by {author} (owner: {owner})")
 
-    readme = build_readme(services, commit_cache)
+    readme = build_readme(services, commit_cache, owner_cache)
     readme_path.write_text(readme)
     print(f"\nWrote {readme_path}")
 
