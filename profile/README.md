@@ -5,7 +5,7 @@ Internal tools, data pipelines, and AI-powered applications built by the S2G tea
 **Cloud Run URL pattern:** `https://{service-name}-vudrpjptuq-uc.a.run.app`  
 **Posit Connect:** `https://connect.s2gdata.com`  
 **GCP Project:** `s2g-data-platform`  
-**Last updated:** 2026-03-28 08:07 UTC
+**Last updated:** 2026-03-29 08:07 UTC
 
 ---
 
@@ -16,14 +16,14 @@ User-facing applications deployed on Google Cloud Run. All restricted to `@s2gin
 | App | Repo | Description | Owner | Last Commit | Last Committer |
 |-----|------|-------------|-------|-------------|----------------|
 | [My Dashboard](https://mydashboard-s2g-vudrpjptuq-uc.a.run.app) | [mydashboard-s2g](https://github.com/S2G-Investments/mydashboard-s2g) | Personal dashboard with notes scratchpad, calendar, and links to all S2G apps | Kevin Lo | 2026-03-10 | Kevin Lo |
-| [S2G Notes](https://s2g-notes-vudrpjptuq-uc.a.run.app) | [s2g-notes](https://github.com/S2G-Investments/s2g-notes) | Meeting notes tied to Google Calendar events, with public/private visibility | Chuck | 2026-03-28 | Sean Nguyen |
+| [S2G Notes](https://s2g-notes-vudrpjptuq-uc.a.run.app) | [s2g-notes](https://github.com/S2G-Investments/s2g-notes) | Meeting notes tied to Google Calendar events, with public/private visibility | Chuck | 2026-03-29 | Sean Nguyen |
 | [Portfolio Companies](https://portfolio-companies-app-vudrpjptuq-uc.a.run.app) | [portfolio-companies-app](https://github.com/S2G-Investments/portfolio-companies-app) | Portfolio company tracker with Salesforce integration and annotations | Chuck | 2026-03-25 | Kevin H |
 | [Portco Quarterly Performance](https://pqp-vudrpjptuq-uc.a.run.app) | [pqp](https://github.com/S2G-Investments/pqp) | Quarterly performance tracking for portfolio companies | Chuck | 2026-03-11 | Chuck |
 | [Weekly Meeting](https://weekly-meeting-app-vudrpjptuq-uc.a.run.app) | [weekly-meeting-app](https://github.com/S2G-Investments/weekly-meeting-app) | Weekly team meeting app for shared agendas and notes | Chuck | 2026-03-19 | Chuck |
 | [Executive Dashboard](https://s2g-executive-dashboard-vudrpjptuq-uc.a.run.app) | [s2g-dashboard](https://github.com/S2G-Investments/s2g-dashboard) | S2G-wide executive metrics dashboard | Chuck | 2026-03-08 | Chuck |
 | [H1 Goal Dashboard](https://h1-goal-dashboard-vudrpjptuq-uc.a.run.app) | [h1-goal-dashboard](https://github.com/S2G-Investments/h1-goal-dashboard) | H1 2026 strategic goal tracking with AI-powered insights | Chuck | 2026-03-11 | Chuck |
 | [Exit ABC](https://exit-abc-vudrpjptuq-uc.a.run.app) | [Exit-ABC](https://github.com/S2G-Investments/Exit-ABC) | Exit modeling and analysis tool | Chuck | 2026-03-20 | Chuck |
-| [Networker](https://networker-vudrpjptuq-uc.a.run.app) | [networker](https://github.com/S2G-Investments/networker) | Contact relationship management tool | Chuck | 2026-03-24 | Chuck |
+| [Networker](https://networker-vudrpjptuq-uc.a.run.app) | [networker](https://github.com/S2G-Investments/networker) | Contact relationship management tool | Chuck | 2026-03-28 | Chuck |
 | [Narwhal Tracker](https://narwhal-tracker-vudrpjptuq-uc.a.run.app) | — | Narwhal deal tracking | — | — | — |
 | [Priority Accounts](https://priority-accounts-vudrpjptuq-uc.a.run.app) | — | Priority account management | — | — | — |
 | [Salesforce Login Report](https://salesforce-login-report-vudrpjptuq-uc.a.run.app) | [salesforce-login-report](https://github.com/S2G-Investments/salesforce-login-report) | Salesforce user login activity report | Chuck | 2026-03-01 | Chuck |
