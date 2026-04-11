@@ -5,7 +5,7 @@ Internal tools, data pipelines, and AI-powered applications built by the S2G tea
 **Cloud Run URL pattern:** `https://{service-name}-vudrpjptuq-uc.a.run.app`  
 **Posit Connect:** `https://connect.s2gdata.com`  
 **GCP Project:** `s2g-data-platform`  
-**Last updated:** 2026-04-10 08:26 UTC
+**Last updated:** 2026-04-11 08:09 UTC
 
 ---
 
@@ -17,7 +17,7 @@ User-facing applications deployed on Google Cloud Run. All restricted to `@s2gin
 |-----|------|-------------|-------|-------------|----------------|
 | [My Dashboard](https://mydashboard-s2g-vudrpjptuq-uc.a.run.app) | [mydashboard-s2g](https://github.com/S2G-Investments/mydashboard-s2g) | Personal dashboard with notes scratchpad, calendar, and links to all S2G apps | Kevin Lo | 2026-03-10 | Kevin Lo |
 | [S2G Notes](https://s2g-notes-vudrpjptuq-uc.a.run.app) | [s2g-notes](https://github.com/S2G-Investments/s2g-notes) | Meeting notes tied to Google Calendar events, with public/private visibility | Chuck | 2026-04-09 | Sean Nguyen |
-| [Portfolio Companies](https://portfolio-companies-app-vudrpjptuq-uc.a.run.app) | [portfolio-companies-app](https://github.com/S2G-Investments/portfolio-companies-app) | Portfolio company tracker with Salesforce integration and annotations | Chuck | 2026-04-10 | Sean Nguyen |
+| [Portfolio Companies](https://portfolio-companies-app-vudrpjptuq-uc.a.run.app) | [portfolio-companies-app](https://github.com/S2G-Investments/portfolio-companies-app) | Portfolio company tracker with Salesforce integration and annotations | Chuck | 2026-04-10 | Chuck |
 | [Portco Quarterly Performance](https://pqp-vudrpjptuq-uc.a.run.app) | [pqp](https://github.com/S2G-Investments/pqp) | Quarterly performance tracking for portfolio companies | Chuck | 2026-04-09 | Sean Nguyen |
 | [Weekly Meeting](https://weekly-meeting-app-vudrpjptuq-uc.a.run.app) | [weekly-meeting-app](https://github.com/S2G-Investments/weekly-meeting-app) | Weekly team meeting app for shared agendas and notes | Chuck | 2026-03-19 | Chuck |
 | [Executive Dashboard](https://s2g-executive-dashboard-vudrpjptuq-uc.a.run.app) | [s2g-dashboard](https://github.com/S2G-Investments/s2g-dashboard) | S2G-wide executive metrics dashboard | Chuck | 2026-04-09 | Sean Nguyen |
@@ -30,7 +30,7 @@ User-facing applications deployed on Google Cloud Run. All restricted to `@s2gin
 | [SEC MR Dashboard](https://sec-mr-dashboard-vudrpjptuq-uc.a.run.app) | [sec-marketing-review](https://github.com/S2G-Investments/sec-marketing-review) | SEC marketing review compliance dashboard | Chuck | 2026-04-09 | Sean Nguyen |
 | [Software Request](https://software-request-app-vudrpjptuq-uc.a.run.app) | [software-request-app](https://github.com/S2G-Investments/software-request-app) | Employee software request portal | Chuck | 2026-03-14 | Chuck |
 | [AI Training](https://s2g-ai-training-vudrpjptuq-uc.a.run.app) | [s2g-ai-training](https://github.com/S2G-Investments/s2g-ai-training) | 10-lesson AI training curriculum for the S2G team | Chuck | 2026-04-04 | Chuck |
-| [Summit Tables](https://summit-tables-vudrpjptuq-uc.a.run.app) | [Summit_Tables](https://github.com/S2G-Investments/Summit_Tables) | Intelligent seating management tool for S2G Annual Summit events | Mitch Worden | 2026-04-09 | Mitch |
+| [Summit Tables](https://summit-tables-vudrpjptuq-uc.a.run.app) | [Summit_Tables](https://github.com/S2G-Investments/Summit_Tables) | Intelligent seating management tool for S2G Annual Summit events | Mitch Worden | 2026-04-10 | Mitch |
 | [Feedback Window](https://feedback-window-vudrpjptuq-uc.a.run.app) | [feedback-window](https://github.com/S2G-Investments/feedback-window) | Embeddable feedback widget and admin dashboard for collecting user feedback from S2G apps | Chuck | 2026-03-12 | Chuck |
 
 ---
@@ -63,7 +63,7 @@ Deployed to [connect.s2gdata.com](https://connect.s2gdata.com).
 | [ir_dashboard](https://github.com/S2G-Investments/ir_dashboard) | IR tracking dashboard — LP meetings and fund pipeline | Sean Nguyen | 2026-02-17 | Sean Nguyen |
 | [software-approval-portal](https://github.com/S2G-Investments/software-approval-portal) | Software approval portal for Technology, Legal, and Compliance review | Christopher Marshall | 2026-01-30 | Christopher Marshall |
 | [contract-agent](https://github.com/S2G-Investments/contract-agent) | AI-powered legal contract intake application | Sean Nguyen | 2026-01-27 | Sean Nguyen |
-| [summit](https://github.com/S2G-Investments/summit) | S2G Summit dashboards — year-in-review analytics | Sean Nguyen | 2026-04-10 | Sean Nguyen |
+| [summit](https://github.com/S2G-Investments/summit) | S2G Summit dashboards — year-in-review analytics | Sean Nguyen | 2026-04-11 | Sean Nguyen |
 | [fv-staffing-tool](https://github.com/S2G-Investments/fv-staffing-tool) | Streamlit app for tracking and managing FV staffing assignments | Sean Nguyen | 2026-03-30 | Francis Villante |
 | [meeting-capture-scorecard](https://github.com/S2G-Investments/meeting-capture-scorecard) | Scores meeting capture coverage against Google Calendar, deployed to Posit Connect | Christopher Marshall | 2026-04-04 | Sean Nguyen |
 
@@ -87,7 +87,7 @@ Deployed to [connect.s2gdata.com](https://connect.s2gdata.com).
 |------|-------------|-------|-------------|----------------|
 | [claude-config](https://github.com/S2G-Investments/claude-config) | Shared Claude Code configuration templates for the S2G team | Sean Nguyen | 2026-01-27 | Sean Nguyen |
 | [claude-skills](https://github.com/S2G-Investments/claude-skills) | Claude Code skills for BigQuery, Salesforce, Box, and S2G brand | Sean Nguyen | 2026-01-26 | Christopher Marshall |
-| [GCP-Claude-security-settings](https://github.com/S2G-Investments/GCP-Claude-security-settings) | Role-based Claude Code config for S2G multi-user deployment with auditable access controls | Sean Nguyen | 2026-04-10 | Sean Nguyen |
+| [GCP-Claude-security-settings](https://github.com/S2G-Investments/GCP-Claude-security-settings) | Role-based Claude Code config for S2G multi-user deployment with auditable access controls | Sean Nguyen | 2026-04-11 | Sean Nguyen |
 
 ---
 
