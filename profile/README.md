@@ -5,7 +5,7 @@ Internal tools, data pipelines, and AI-powered applications built by the S2G tea
 **Cloud Run URL pattern:** `https://{service-name}-vudrpjptuq-uc.a.run.app`  
 **Posit Connect:** `https://connect.s2gdata.com`  
 **GCP Project:** `s2g-data-platform`  
-**Last updated:** 2026-04-20 08:40 UTC
+**Last updated:** 2026-04-21 08:31 UTC
 
 ---
 
