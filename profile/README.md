@@ -5,7 +5,7 @@ Internal tools, data pipelines, and AI-powered applications built by the S2G tea
 **Cloud Run URL pattern:** `https://{service-name}-vudrpjptuq-uc.a.run.app`  
 **Posit Connect:** `https://connect.s2gdata.com`  
 **GCP Project:** `s2g-data-platform`  
-**Last updated:** 2026-04-26 08:23 UTC
+**Last updated:** 2026-04-27 08:46 UTC
 
 ---
 
@@ -23,7 +23,7 @@ User-facing applications deployed on Google Cloud Run. All restricted to `@s2gin
 | [Executive Dashboard](https://s2g-executive-dashboard-vudrpjptuq-uc.a.run.app) | [s2g-dashboard](https://github.com/S2G-Investments/s2g-dashboard) | S2G-wide executive metrics dashboard | Chuck | 2026-04-09 | Sean Nguyen |
 | [H1 Goal Dashboard](https://h1-goal-dashboard-vudrpjptuq-uc.a.run.app) | [h1-goal-dashboard](https://github.com/S2G-Investments/h1-goal-dashboard) | H1 2026 strategic goal tracking with AI-powered insights | Chuck | 2026-04-21 | Sean Nguyen |
 | [Exit ABC](https://exit-abc-vudrpjptuq-uc.a.run.app) | [Exit-ABC](https://github.com/S2G-Investments/Exit-ABC) | Exit modeling and analysis tool | Chuck | 2026-03-20 | Chuck |
-| [Networker](https://networker-vudrpjptuq-uc.a.run.app) | [networker](https://github.com/S2G-Investments/networker) | Contact relationship management tool | Chuck | 2026-04-23 | Chuck |
+| [Networker](https://networker-vudrpjptuq-uc.a.run.app) | [networker](https://github.com/S2G-Investments/networker) | Contact relationship management tool | Chuck | 2026-04-27 | Chuck |
 | [Narwhal Tracker](https://narwhal-tracker-vudrpjptuq-uc.a.run.app) | — | Narwhal deal tracking | — | — | — |
 | [Priority Accounts](https://priority-accounts-vudrpjptuq-uc.a.run.app) | — | Priority account management | — | — | — |
 | [Salesforce Login Report](https://salesforce-login-report-vudrpjptuq-uc.a.run.app) | [salesforce-login-report](https://github.com/S2G-Investments/salesforce-login-report) | Salesforce user login activity report | Chuck | 2026-03-01 | Chuck |
