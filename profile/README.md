@@ -5,7 +5,7 @@ Internal tools, data pipelines, and AI-powered applications built by the S2G tea
 **Cloud Run URL pattern:** `https://{service-name}-vudrpjptuq-uc.a.run.app`  
 **Posit Connect:** `https://connect.s2gdata.com`  
 **GCP Project:** `s2g-data-platform`  
-**Last updated:** 2026-05-02 08:26 UTC
+**Last updated:** 2026-05-03 08:31 UTC
 
 ---
 
@@ -87,7 +87,7 @@ Deployed to [connect.s2gdata.com](https://connect.s2gdata.com).
 |------|-------------|-------|-------------|----------------|
 | [claude-config](https://github.com/S2G-Investments/claude-config) | Shared Claude Code configuration templates for the S2G team | Sean Nguyen | 2026-01-27 | Sean Nguyen |
 | [claude-skills](https://github.com/S2G-Investments/claude-skills) | Claude Code skills for BigQuery, Salesforce, Box, and S2G brand | Sean Nguyen | 2026-01-26 | Christopher Marshall |
-| [GCP-Claude-security-settings](https://github.com/S2G-Investments/GCP-Claude-security-settings) | Role-based Claude Code config for S2G multi-user deployment with auditable access controls | Sean Nguyen | 2026-05-01 | Sean Nguyen |
+| [GCP-Claude-security-settings](https://github.com/S2G-Investments/GCP-Claude-security-settings) | Role-based Claude Code config for S2G multi-user deployment with auditable access controls | Sean Nguyen | 2026-05-03 | Chuck |
 
 ---
 
