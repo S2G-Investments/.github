@@ -5,7 +5,7 @@ Internal tools, data pipelines, and AI-powered applications built by the S2G tea
 **Cloud Run URL pattern:** `https://{service-name}-vudrpjptuq-uc.a.run.app`  
 **Posit Connect:** `https://connect.s2gdata.com`  
 **GCP Project:** `s2g-data-platform`  
-**Last updated:** 2026-05-04 08:46 UTC
+**Last updated:** 2026-05-05 08:39 UTC
 
 ---
 
@@ -64,7 +64,7 @@ Deployed to [connect.s2gdata.com](https://connect.s2gdata.com).
 | [software-approval-portal](https://github.com/S2G-Investments/software-approval-portal) | Software approval portal for Technology, Legal, and Compliance review | Christopher Marshall | 2026-01-30 | Christopher Marshall |
 | [contract-agent](https://github.com/S2G-Investments/contract-agent) | AI-powered legal contract intake application | Sean Nguyen | 2026-01-27 | Sean Nguyen |
 | [summit](https://github.com/S2G-Investments/summit) | S2G Summit dashboards — year-in-review analytics | Sean Nguyen | 2026-04-28 | Sean Nguyen |
-| [fv-staffing-tool](https://github.com/S2G-Investments/fv-staffing-tool) | Streamlit app for tracking and managing FV staffing assignments | Sean Nguyen | 2026-03-30 | Francis Villante |
+| [fv-staffing-tool](https://github.com/S2G-Investments/fv-staffing-tool) | Streamlit app for tracking and managing FV staffing assignments | Sean Nguyen | 2026-05-04 | Francis Villante |
 | [meeting-capture-scorecard](https://github.com/S2G-Investments/meeting-capture-scorecard) | Scores meeting capture coverage against Google Calendar, deployed to Posit Connect | Christopher Marshall | 2026-04-28 | Sean Nguyen |
 
 ---
