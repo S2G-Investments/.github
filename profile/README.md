@@ -5,7 +5,7 @@ Internal tools, data pipelines, and AI-powered applications built by the S2G tea
 **Cloud Run URL pattern:** `https://{service-name}-vudrpjptuq-uc.a.run.app`  
 **Posit Connect:** `https://connect.s2gdata.com`  
 **GCP Project:** `s2g-data-platform`  
-**Last updated:** 2026-05-08 08:27 UTC
+**Last updated:** 2026-05-09 08:29 UTC
 
 ---
 
@@ -30,7 +30,7 @@ User-facing applications deployed on Google Cloud Run. All restricted to `@s2gin
 | [SEC MR Dashboard](https://sec-mr-dashboard-vudrpjptuq-uc.a.run.app) | [sec-marketing-review](https://github.com/S2G-Investments/sec-marketing-review) | SEC marketing review compliance dashboard | Chuck | 2026-04-28 | Chuck |
 | [Software Request](https://software-request-app-vudrpjptuq-uc.a.run.app) | [software-request-app](https://github.com/S2G-Investments/software-request-app) | Employee software request portal | Chuck | 2026-03-14 | Chuck |
 | [AI Training](https://s2g-ai-training-vudrpjptuq-uc.a.run.app) | [s2g-ai-training](https://github.com/S2G-Investments/s2g-ai-training) | 10-lesson AI training curriculum for the S2G team | Chuck | 2026-04-04 | Chuck |
-| [Summit Tables](https://summit-tables-vudrpjptuq-uc.a.run.app) | [Summit_Tables](https://github.com/S2G-Investments/Summit_Tables) | Intelligent seating management tool for S2G Annual Summit events | Mitch Worden | 2026-05-06 | Sean Nguyen |
+| [Summit Tables](https://summit-tables-vudrpjptuq-uc.a.run.app) | [Summit_Tables](https://github.com/S2G-Investments/Summit_Tables) | Intelligent seating management tool for S2G Annual Summit events | Mitch Worden | 2026-05-08 | Sean Nguyen |
 | [Feedback Window](https://feedback-window-vudrpjptuq-uc.a.run.app) | [feedback-window](https://github.com/S2G-Investments/feedback-window) | Embeddable feedback widget and admin dashboard for collecting user feedback from S2G apps | Chuck | 2026-03-12 | Chuck |
 
 ---
