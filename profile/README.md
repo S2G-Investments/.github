@@ -5,7 +5,7 @@ Internal tools, data pipelines, and AI-powered applications built by the S2G tea
 **Cloud Run URL pattern:** `https://{service-name}-vudrpjptuq-uc.a.run.app`  
 **Posit Connect:** `https://connect.s2gdata.com`  
 **GCP Project:** `s2g-data-platform`  
-**Last updated:** 2026-05-12 08:53 UTC
+**Last updated:** 2026-05-13 08:56 UTC
 
 ---
 
@@ -16,7 +16,7 @@ User-facing applications deployed on Google Cloud Run. All restricted to `@s2gin
 | App | Repo | Description | Owner | Last Commit | Last Committer |
 |-----|------|-------------|-------|-------------|----------------|
 | [My Dashboard](https://mydashboard-s2g-vudrpjptuq-uc.a.run.app) | [mydashboard-s2g](https://github.com/S2G-Investments/mydashboard-s2g) | Personal dashboard with notes scratchpad, calendar, and links to all S2G apps | Kevin Lo | 2026-05-08 | Sean Nguyen |
-| [S2G Notes](https://s2g-notes-vudrpjptuq-uc.a.run.app) | [s2g-notes](https://github.com/S2G-Investments/s2g-notes) | Meeting notes tied to Google Calendar events, with public/private visibility | Chuck | 2026-05-11 | Sean Nguyen |
+| [S2G Notes](https://s2g-notes-vudrpjptuq-uc.a.run.app) | [s2g-notes](https://github.com/S2G-Investments/s2g-notes) | Meeting notes tied to Google Calendar events, with public/private visibility | Chuck | 2026-05-12 | Sean Nguyen |
 | [Portfolio Companies](https://portfolio-companies-app-vudrpjptuq-uc.a.run.app) | [portfolio-companies-app](https://github.com/S2G-Investments/portfolio-companies-app) | Portfolio company tracker with Salesforce integration and annotations | Chuck | 2026-04-16 | klo-s2g |
 | [Portco Quarterly Performance](https://pqp-vudrpjptuq-uc.a.run.app) | [pqp](https://github.com/S2G-Investments/pqp) | Quarterly performance tracking for portfolio companies | Chuck | 2026-04-09 | Sean Nguyen |
 | [Weekly Meeting](https://weekly-meeting-app-vudrpjptuq-uc.a.run.app) | [weekly-meeting-app](https://github.com/S2G-Investments/weekly-meeting-app) | Weekly team meeting app for shared agendas and notes | Chuck | 2026-03-19 | Chuck |
@@ -48,7 +48,7 @@ Background services, scheduled jobs, and Salesforce integrations.
 | [s2g-zoom-meeting-sync](https://github.com/S2G-Investments/s2g-zoom-meeting-sync) | Zoom transcript pipeline: webhooks → VTT parsing → Box upload → AI processing | Sean Nguyen | 2026-05-08 | Sean Nguyen |
 | [fivetran-dbt](https://github.com/S2G-Investments/fivetran-dbt) | dbt project transforming Fivetran source data into analytics tables | Joe Intrakamhang | 2026-04-16 | Sean Nguyen |
 | [slack-time-allocation-bot](https://github.com/S2G-Investments/slack-time-allocation-bot) | Slack DM bot for personal time logging with BigQuery storage | Sean Nguyen | 2026-02-05 | Sean Nguyen |
-| [s2g-notes-ingest](https://github.com/S2G-Investments/s2g-notes-ingest) | Ingests and processes S2G meeting notes, syncing data to BigQuery | Sean Nguyen | 2026-05-11 | Sean Nguyen |
+| [s2g-notes-ingest](https://github.com/S2G-Investments/s2g-notes-ingest) | Ingests and processes S2G meeting notes, syncing data to BigQuery | Sean Nguyen | 2026-05-12 | Sean Nguyen |
 | [salesforce-login-sync](https://github.com/S2G-Investments/salesforce-login-sync) | Daily Cloud Function syncing Salesforce user login activity to BigQuery | Chuck | 2026-03-13 | Chuck |
 
 ---
