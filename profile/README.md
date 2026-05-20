@@ -5,7 +5,7 @@ Internal tools, data pipelines, and AI-powered applications built by the S2G tea
 **Cloud Run URL pattern:** `https://{service-name}-vudrpjptuq-uc.a.run.app`  
 **Posit Connect:** `https://connect.s2gdata.com`  
 **GCP Project:** `s2g-data-platform`  
-**Last updated:** 2026-05-19 09:02 UTC
+**Last updated:** 2026-05-20 09:00 UTC
 
 ---
 
@@ -30,7 +30,7 @@ User-facing applications deployed on Google Cloud Run. All restricted to `@s2gin
 | [SEC MR Dashboard](https://sec-mr-dashboard-vudrpjptuq-uc.a.run.app) | [sec-marketing-review](https://github.com/S2G-Investments/sec-marketing-review) | SEC marketing review compliance dashboard | Chuck | 2026-04-28 | Chuck |
 | [Software Request](https://software-request-app-vudrpjptuq-uc.a.run.app) | [software-request-app](https://github.com/S2G-Investments/software-request-app) | Employee software request portal | Chuck | 2026-03-14 | Chuck |
 | [AI Training](https://s2g-ai-training-vudrpjptuq-uc.a.run.app) | [s2g-ai-training](https://github.com/S2G-Investments/s2g-ai-training) | 10-lesson AI training curriculum for the S2G team | Chuck | 2026-04-04 | Chuck |
-| [Summit Tables](https://summit-tables-vudrpjptuq-uc.a.run.app) | [Summit_Tables](https://github.com/S2G-Investments/Summit_Tables) | Intelligent seating management tool for S2G Annual Summit events | Mitch Worden | 2026-05-18 | Sean Nguyen |
+| [Summit Tables](https://summit-tables-vudrpjptuq-uc.a.run.app) | [Summit_Tables](https://github.com/S2G-Investments/Summit_Tables) | Intelligent seating management tool for S2G Annual Summit events | Mitch Worden | 2026-05-19 | Sean Nguyen |
 | [Feedback Window](https://feedback-window-vudrpjptuq-uc.a.run.app) | [feedback-window](https://github.com/S2G-Investments/feedback-window) | Embeddable feedback widget and admin dashboard for collecting user feedback from S2G apps | Chuck | 2026-03-12 | Chuck |
 
 ---
@@ -64,7 +64,7 @@ Deployed to [connect.s2gdata.com](https://connect.s2gdata.com).
 | [software-approval-portal](https://github.com/S2G-Investments/software-approval-portal) | Software approval portal for Technology, Legal, and Compliance review | Christopher Marshall | 2026-01-30 | Christopher Marshall |
 | [contract-agent](https://github.com/S2G-Investments/contract-agent) | AI-powered legal contract intake application | Sean Nguyen | 2026-01-27 | Sean Nguyen |
 | [summit](https://github.com/S2G-Investments/summit) | S2G Summit dashboards — year-in-review analytics | Sean Nguyen | 2026-04-28 | Sean Nguyen |
-| [fv-staffing-tool](https://github.com/S2G-Investments/fv-staffing-tool) | Streamlit app for tracking and managing FV staffing assignments | Sean Nguyen | 2026-05-04 | Francis Villante |
+| [fv-staffing-tool](https://github.com/S2G-Investments/fv-staffing-tool) | Streamlit app for tracking and managing FV staffing assignments | Sean Nguyen | 2026-05-19 | Francis Villante |
 | [meeting-capture-scorecard](https://github.com/S2G-Investments/meeting-capture-scorecard) | Scores meeting capture coverage against Google Calendar, deployed to Posit Connect | Christopher Marshall | 2026-04-28 | Sean Nguyen |
 
 ---
