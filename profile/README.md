@@ -5,7 +5,7 @@ Internal tools, data pipelines, and AI-powered applications built by the S2G tea
 **Cloud Run URL pattern:** `https://{service-name}-vudrpjptuq-uc.a.run.app`  
 **Posit Connect:** `https://connect.s2gdata.com`  
 **GCP Project:** `s2g-data-platform`  
-**Last updated:** 2026-06-07 08:58 UTC
+**Last updated:** 2026-06-08 09:28 UTC
 
 ---
 
@@ -16,7 +16,7 @@ User-facing applications deployed on Google Cloud Run. All restricted to `@s2gin
 | App | Repo | Description | Owner | Last Commit | Last Committer |
 |-----|------|-------------|-------|-------------|----------------|
 | [My Dashboard](https://mydashboard-s2g-vudrpjptuq-uc.a.run.app) | [mydashboard-s2g](https://github.com/S2G-Investments/mydashboard-s2g) | Personal dashboard with notes scratchpad, calendar, and links to all S2G apps | Kevin Lo | 2026-05-08 | Sean Nguyen |
-| [S2G Notes](https://s2g-notes-vudrpjptuq-uc.a.run.app) | [s2g-notes](https://github.com/S2G-Investments/s2g-notes) | Meeting notes tied to Google Calendar events, with public/private visibility | Chuck | 2026-06-03 | Sean Nguyen |
+| [S2G Notes](https://s2g-notes-vudrpjptuq-uc.a.run.app) | [s2g-notes](https://github.com/S2G-Investments/s2g-notes) | Meeting notes tied to Google Calendar events, with public/private visibility | Chuck | 2026-06-08 | Sean Nguyen |
 | [Portfolio Companies](https://portfolio-companies-app-vudrpjptuq-uc.a.run.app) | [portfolio-companies-app](https://github.com/S2G-Investments/portfolio-companies-app) | Portfolio company tracker with Salesforce integration and annotations | Chuck | 2026-04-16 | klo-s2g |
 | [Portco Quarterly Performance](https://pqp-vudrpjptuq-uc.a.run.app) | [pqp](https://github.com/S2G-Investments/pqp) | Quarterly performance tracking for portfolio companies | Chuck | 2026-04-09 | Sean Nguyen |
 | [Weekly Meeting](https://weekly-meeting-app-vudrpjptuq-uc.a.run.app) | [weekly-meeting-app](https://github.com/S2G-Investments/weekly-meeting-app) | Weekly team meeting app for shared agendas and notes | Chuck | 2026-03-19 | Chuck |
@@ -65,7 +65,7 @@ Deployed to [connect.s2gdata.com](https://connect.s2gdata.com).
 | [contract-agent](https://github.com/S2G-Investments/contract-agent) | AI-powered legal contract intake application | Sean Nguyen | 2026-01-27 | Sean Nguyen |
 | [summit](https://github.com/S2G-Investments/summit) | S2G Summit dashboards — year-in-review analytics | Sean Nguyen | 2026-04-28 | Sean Nguyen |
 | [fv-staffing-tool](https://github.com/S2G-Investments/fv-staffing-tool) | Streamlit app for tracking and managing FV staffing assignments | Sean Nguyen | 2026-05-19 | Francis Villante |
-| [meeting-capture-scorecard](https://github.com/S2G-Investments/meeting-capture-scorecard) | Scores meeting capture coverage against Google Calendar, deployed to Posit Connect | Christopher Marshall | 2026-06-05 | Sean Nguyen |
+| [meeting-capture-scorecard](https://github.com/S2G-Investments/meeting-capture-scorecard) | Scores meeting capture coverage against Google Calendar, deployed to Posit Connect | Christopher Marshall | 2026-06-07 | Sean Nguyen |
 
 ---
 
