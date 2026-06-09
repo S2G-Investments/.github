@@ -5,7 +5,7 @@ Internal tools, data pipelines, and AI-powered applications built by the S2G tea
 **Cloud Run URL pattern:** `https://{service-name}-vudrpjptuq-uc.a.run.app`  
 **Posit Connect:** `https://connect.s2gdata.com`  
 **GCP Project:** `s2g-data-platform`  
-**Last updated:** 2026-06-08 09:28 UTC
+**Last updated:** 2026-06-09 09:01 UTC
 
 ---
 
@@ -16,7 +16,7 @@ User-facing applications deployed on Google Cloud Run. All restricted to `@s2gin
 | App | Repo | Description | Owner | Last Commit | Last Committer |
 |-----|------|-------------|-------|-------------|----------------|
 | [My Dashboard](https://mydashboard-s2g-vudrpjptuq-uc.a.run.app) | [mydashboard-s2g](https://github.com/S2G-Investments/mydashboard-s2g) | Personal dashboard with notes scratchpad, calendar, and links to all S2G apps | Kevin Lo | 2026-05-08 | Sean Nguyen |
-| [S2G Notes](https://s2g-notes-vudrpjptuq-uc.a.run.app) | [s2g-notes](https://github.com/S2G-Investments/s2g-notes) | Meeting notes tied to Google Calendar events, with public/private visibility | Chuck | 2026-06-08 | Sean Nguyen |
+| [S2G Notes](https://s2g-notes-vudrpjptuq-uc.a.run.app) | [s2g-notes](https://github.com/S2G-Investments/s2g-notes) | Meeting notes tied to Google Calendar events, with public/private visibility | Chuck | 2026-06-09 | Sean Nguyen |
 | [Portfolio Companies](https://portfolio-companies-app-vudrpjptuq-uc.a.run.app) | [portfolio-companies-app](https://github.com/S2G-Investments/portfolio-companies-app) | Portfolio company tracker with Salesforce integration and annotations | Chuck | 2026-04-16 | klo-s2g |
 | [Portco Quarterly Performance](https://pqp-vudrpjptuq-uc.a.run.app) | [pqp](https://github.com/S2G-Investments/pqp) | Quarterly performance tracking for portfolio companies | Chuck | 2026-04-09 | Sean Nguyen |
 | [Weekly Meeting](https://weekly-meeting-app-vudrpjptuq-uc.a.run.app) | [weekly-meeting-app](https://github.com/S2G-Investments/weekly-meeting-app) | Weekly team meeting app for shared agendas and notes | Chuck | 2026-03-19 | Chuck |
@@ -42,13 +42,13 @@ Background services, scheduled jobs, and Salesforce integrations.
 | Repo | Description | Owner | Last Commit | Last Committer |
 |------|-------------|-------|-------------|----------------|
 | [origination-gmail-ingest](https://github.com/S2G-Investments/origination-gmail-ingest) | Serverless pipeline: processes origination@ inbox deals via Claude AI → Salesforce | Sean Nguyen | 2026-05-07 | Sean Nguyen |
-| [pass-email-ingest](https://github.com/S2G-Investments/pass-email-ingest) | Serverless pipeline: processes pass@ inbox deals via Claude AI → Salesforce | Sean Nguyen | 2026-04-09 | Sean Nguyen |
+| [pass-email-ingest](https://github.com/S2G-Investments/pass-email-ingest) | Serverless pipeline: processes pass@ inbox deals via Claude AI → Salesforce | Sean Nguyen | 2026-06-09 | Sean Nguyen |
 | [board-deck-gmail-ingest](https://github.com/S2G-Investments/board-deck-gmail-ingest) | Board materials email processor with AI extraction and Box storage | Sean Nguyen | 2026-04-09 | Sean Nguyen |
 | [calendar-to-salesforce](https://github.com/S2G-Investments/calendar-to-salesforce) | Google Calendar → Salesforce Event sync for IR team | Sean Nguyen | 2026-01-07 | Sean Nguyen |
 | [s2g-zoom-meeting-sync](https://github.com/S2G-Investments/s2g-zoom-meeting-sync) | Zoom transcript pipeline: webhooks → VTT parsing → Box upload → AI processing | Sean Nguyen | 2026-06-05 | Sean Nguyen |
 | [fivetran-dbt](https://github.com/S2G-Investments/fivetran-dbt) | dbt project transforming Fivetran source data into analytics tables | Joe Intrakamhang | 2026-06-04 | Sean Nguyen |
 | [slack-time-allocation-bot](https://github.com/S2G-Investments/slack-time-allocation-bot) | Slack DM bot for personal time logging with BigQuery storage | Sean Nguyen | 2026-02-05 | Sean Nguyen |
-| [s2g-notes-ingest](https://github.com/S2G-Investments/s2g-notes-ingest) | Ingests and processes S2G meeting notes, syncing data to BigQuery | Sean Nguyen | 2026-05-12 | Sean Nguyen |
+| [s2g-notes-ingest](https://github.com/S2G-Investments/s2g-notes-ingest) | Ingests and processes S2G meeting notes, syncing data to BigQuery | Sean Nguyen | 2026-06-09 | Sean Nguyen |
 | [salesforce-login-sync](https://github.com/S2G-Investments/salesforce-login-sync) | Daily Cloud Function syncing Salesforce user login activity to BigQuery | Chuck | 2026-03-13 | Chuck |
 
 ---
@@ -65,7 +65,7 @@ Deployed to [connect.s2gdata.com](https://connect.s2gdata.com).
 | [contract-agent](https://github.com/S2G-Investments/contract-agent) | AI-powered legal contract intake application | Sean Nguyen | 2026-01-27 | Sean Nguyen |
 | [summit](https://github.com/S2G-Investments/summit) | S2G Summit dashboards — year-in-review analytics | Sean Nguyen | 2026-04-28 | Sean Nguyen |
 | [fv-staffing-tool](https://github.com/S2G-Investments/fv-staffing-tool) | Streamlit app for tracking and managing FV staffing assignments | Sean Nguyen | 2026-05-19 | Francis Villante |
-| [meeting-capture-scorecard](https://github.com/S2G-Investments/meeting-capture-scorecard) | Scores meeting capture coverage against Google Calendar, deployed to Posit Connect | Christopher Marshall | 2026-06-07 | Sean Nguyen |
+| [meeting-capture-scorecard](https://github.com/S2G-Investments/meeting-capture-scorecard) | Scores meeting capture coverage against Google Calendar, deployed to Posit Connect | Christopher Marshall | 2026-06-08 | Sean Nguyen |
 
 ---
 
@@ -87,7 +87,7 @@ Deployed to [connect.s2gdata.com](https://connect.s2gdata.com).
 |------|-------------|-------|-------------|----------------|
 | [claude-config](https://github.com/S2G-Investments/claude-config) | Shared Claude Code configuration templates for the S2G team | Sean Nguyen | 2026-01-27 | Sean Nguyen |
 | [claude-skills](https://github.com/S2G-Investments/claude-skills) | Claude Code skills for BigQuery, Salesforce, Box, and S2G brand | Sean Nguyen | 2026-01-26 | Christopher Marshall |
-| [GCP-Claude-security-settings](https://github.com/S2G-Investments/GCP-Claude-security-settings) | Role-based Claude Code config for S2G multi-user deployment with auditable access controls | Sean Nguyen | 2026-06-05 | Sean Nguyen |
+| [GCP-Claude-security-settings](https://github.com/S2G-Investments/GCP-Claude-security-settings) | Role-based Claude Code config for S2G multi-user deployment with auditable access controls | Sean Nguyen | 2026-06-08 | Sean Nguyen |
 
 ---
 
