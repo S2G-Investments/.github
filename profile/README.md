@@ -5,7 +5,7 @@ Internal tools, data pipelines, and AI-powered applications built by the S2G tea
 **Cloud Run URL pattern:** `https://{service-name}-vudrpjptuq-uc.a.run.app`  
 **Posit Connect:** `https://connect.s2gdata.com`  
 **GCP Project:** `s2g-data-platform`  
-**Last updated:** 2026-06-16 09:41 UTC
+**Last updated:** 2026-06-17 09:29 UTC
 
 ---
 
@@ -16,7 +16,7 @@ User-facing applications deployed on Google Cloud Run. All restricted to `@s2gin
 | App | Repo | Description | Owner | Last Commit | Last Committer |
 |-----|------|-------------|-------|-------------|----------------|
 | [My Dashboard](https://mydashboard-s2g-vudrpjptuq-uc.a.run.app) | [mydashboard-s2g](https://github.com/S2G-Investments/mydashboard-s2g) | Personal dashboard with notes scratchpad, calendar, and links to all S2G apps | Kevin Lo | 2026-05-08 | Sean Nguyen |
-| [S2G Notes](https://s2g-notes-vudrpjptuq-uc.a.run.app) | [s2g-notes](https://github.com/S2G-Investments/s2g-notes) | Meeting notes tied to Google Calendar events, with public/private visibility | Chuck | 2026-06-13 | Sean Nguyen |
+| [S2G Notes](https://s2g-notes-vudrpjptuq-uc.a.run.app) | [s2g-notes](https://github.com/S2G-Investments/s2g-notes) | Meeting notes tied to Google Calendar events, with public/private visibility | Chuck | 2026-06-16 | Sean Nguyen |
 | [Portfolio Companies](https://portfolio-companies-app-vudrpjptuq-uc.a.run.app) | [portfolio-companies-app](https://github.com/S2G-Investments/portfolio-companies-app) | Portfolio company tracker with Salesforce integration and annotations | Chuck | 2026-06-16 | Chuck |
 | [Portco Quarterly Performance](https://pqp-vudrpjptuq-uc.a.run.app) | [pqp](https://github.com/S2G-Investments/pqp) | Quarterly performance tracking for portfolio companies | Chuck | 2026-04-09 | Sean Nguyen |
 | [Weekly Meeting](https://weekly-meeting-app-vudrpjptuq-uc.a.run.app) | [weekly-meeting-app](https://github.com/S2G-Investments/weekly-meeting-app) | Weekly team meeting app for shared agendas and notes | Chuck | 2026-03-19 | Chuck |
@@ -60,7 +60,7 @@ Deployed to [connect.s2gdata.com](https://connect.s2gdata.com).
 | Repo | Description | Owner | Last Commit | Last Committer |
 |------|-------------|-------|-------------|----------------|
 | [s2g-opps-dashboard](https://github.com/S2G-Investments/s2g-opps-dashboard) | Pipeline metrics dashboard, auto-deploys every 6 hours from Salesforce/BigQuery | Sean Nguyen | 2026-06-12 | Sean Nguyen |
-| [ir_dashboard](https://github.com/S2G-Investments/ir_dashboard) | IR tracking dashboard — LP meetings and fund pipeline | Sean Nguyen | 2026-06-10 | Sean Nguyen |
+| [ir_dashboard](https://github.com/S2G-Investments/ir_dashboard) | IR tracking dashboard — LP meetings and fund pipeline | Sean Nguyen | 2026-06-16 | Sean Nguyen |
 | [software-approval-portal](https://github.com/S2G-Investments/software-approval-portal) | Software approval portal for Technology, Legal, and Compliance review | Christopher Marshall | 2026-01-30 | Christopher Marshall |
 | [contract-agent](https://github.com/S2G-Investments/contract-agent) | AI-powered legal contract intake application | Sean Nguyen | 2026-01-27 | Sean Nguyen |
 | [summit](https://github.com/S2G-Investments/summit) | S2G Summit dashboards — year-in-review analytics | Sean Nguyen | 2026-04-28 | Sean Nguyen |
