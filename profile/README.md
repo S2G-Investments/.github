@@ -5,7 +5,7 @@ Internal tools, data pipelines, and AI-powered applications built by the S2G tea
 **Cloud Run URL pattern:** `https://{service-name}-vudrpjptuq-uc.a.run.app`  
 **Posit Connect:** `https://connect.s2gdata.com`  
 **GCP Project:** `s2g-data-platform`  
-**Last updated:** 2026-06-17 09:29 UTC
+**Last updated:** 2026-06-18 09:25 UTC
 
 ---
 
@@ -48,7 +48,7 @@ Background services, scheduled jobs, and Salesforce integrations.
 | [s2g-zoom-meeting-sync](https://github.com/S2G-Investments/s2g-zoom-meeting-sync) | Zoom transcript pipeline: webhooks → VTT parsing → Box upload → AI processing | Sean Nguyen | 2026-06-05 | Sean Nguyen |
 | [fivetran-dbt](https://github.com/S2G-Investments/fivetran-dbt) | dbt project transforming Fivetran source data into analytics tables | Joe Intrakamhang | 2026-06-10 | Sean Nguyen |
 | [slack-time-allocation-bot](https://github.com/S2G-Investments/slack-time-allocation-bot) | Slack DM bot for personal time logging with BigQuery storage | Sean Nguyen | 2026-02-05 | Sean Nguyen |
-| [s2g-notes-ingest](https://github.com/S2G-Investments/s2g-notes-ingest) | Ingests and processes S2G meeting notes, syncing data to BigQuery | Sean Nguyen | 2026-06-13 | Sean Nguyen |
+| [s2g-notes-ingest](https://github.com/S2G-Investments/s2g-notes-ingest) | Ingests and processes S2G meeting notes, syncing data to BigQuery | Sean Nguyen | 2026-06-18 | Sean Nguyen |
 | [salesforce-login-sync](https://github.com/S2G-Investments/salesforce-login-sync) | Daily Cloud Function syncing Salesforce user login activity to BigQuery | Chuck | 2026-03-13 | Chuck |
 
 ---
@@ -87,7 +87,7 @@ Deployed to [connect.s2gdata.com](https://connect.s2gdata.com).
 |------|-------------|-------|-------------|----------------|
 | [claude-config](https://github.com/S2G-Investments/claude-config) | Shared Claude Code configuration templates for the S2G team | Sean Nguyen | 2026-01-27 | Sean Nguyen |
 | [claude-skills](https://github.com/S2G-Investments/claude-skills) | Claude Code skills for BigQuery, Salesforce, Box, and S2G brand | Sean Nguyen | 2026-01-26 | Christopher Marshall |
-| [GCP-Claude-security-settings](https://github.com/S2G-Investments/GCP-Claude-security-settings) | Role-based Claude Code config for S2G multi-user deployment with auditable access controls | Sean Nguyen | 2026-06-15 | Sean Nguyen |
+| [GCP-Claude-security-settings](https://github.com/S2G-Investments/GCP-Claude-security-settings) | Role-based Claude Code config for S2G multi-user deployment with auditable access controls | Sean Nguyen | 2026-06-18 | Sean Nguyen |
 
 ---
 
